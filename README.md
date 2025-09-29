@@ -103,6 +103,27 @@ add = np.array(add)
 add1 = add % 2
 print(f"The correct codeword is : " + " " .join(map(str,add1)))
 ```
+Procedure:
+
+1.Input the number of parity and message bits.
+
+2.Construct the parity matrix.
+
+3.Form the generator matrix using the parity matrix and identity matrix.
+
+4.Generate all possible message bits.
+
+5.Encode the messages using the generator matrix.
+
+6.Compute the Hamming weights for each codeword.
+
+7.Derive the parity-check matrix and its transpose.
+
+8.Input a received codeword.
+
+9.Calculate the syndrome.
+
+10.Determine the error position and correct the codeword.
 # Output Waveform
 ```
 Enter the Parity bits : 3
@@ -159,8 +180,13 @@ Syndrome Matrix
 The error postion is : 0 0 0 1 0 0 0
 The correct codeword is : 1 1 0 1 1 0 1
 ```
+Manual Caluculation:
+
+
+<img width="643" height="1093" alt="image" src="https://github.com/user-attachments/assets/431a4fd8-2403-4174-bc31-ea5640341708" />
+<img width="593" height="1108" alt="image" src="https://github.com/user-attachments/assets/cffcda56-3f9c-401e-b2ca-82a5f8624794" />
+
 # Results
 ```
 Thus linear block code operation for the given input is successfully verified.
 ```
-# Hardware experiment output waveform.
